@@ -10,7 +10,8 @@ module.exports = {
     name: 'JS_Ankara',
     path: '../',
     docker: {
-      image: 'abernix/meteord:base'
+      image: 'abernix/meteord:base',
+      port: 3000
     },
     servers: {
       one: {}
@@ -21,7 +22,7 @@ module.exports = {
     env: {
       ROOT_URL: 'http://209.250.255.230',
       MONGO_URL: 'mongodb://localhost/meteor',
-      PORT: '3000'
+      PORT: 3000
     },
     deployCheckPort: 3000,
   },
